@@ -213,14 +213,19 @@ form .search, .background{
 
 /*Slider*/
 .slider{
-    height: 400px;
+    /*height: 400px;*/
     color: white;
     font-size: 50px;
     text-align: center;
    }
+
+.slider > div {
+    padding: 175px 0;
+};
+
 .blackslider{
-    width: 100%;
-    height: 400px;
+    /*width: 100%;
+    height: 400px;*/
     background-color: rgba(0, 0, 0, 0.2);
     }
 
@@ -592,3 +597,42 @@ footer{
 .hide {
     display: none;
 }
+/*dots*/
+.slick-dots li {
+    margin: 10px;
+}
+
+.slick-dots {
+    margin-top: 50px;
+}
+
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: transparent;
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    margin-top: 5px;
+    background-color: transparent;
+    border: 2px solid rgb(249, 245, 245);
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+.slick-dots li.slick-active button:before {
+    background-color: rgb(246, 230, 230);
+}
+  .slick-next:before {
+    content: ">";
+    color: white;
+    font-size: 30px;
+  }
+  .slick-prev:before {
+    content: "<";
+    color: white;
+    font-size: 30px;
+  }
+  .product-quantity {
+    text-align: center;
+    margin-bottom: 5px;
+  }
